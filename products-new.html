@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신제품 | 제일기계</title>
+    <meta name="description" content="제일기계 신제품 - CNC 선반, 머시닝센터, 복합가공기 등 최신 공작기계">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="icon-phone"></i> 054-972-8795</span>
+                    <span><i class="icon-email"></i> sales@jeilmachine.kr</span>
+                </div>
+                <div class="language-selector">
+                    <a href="#" class="active">KR</a>
+                    <a href="#">EN</a>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-main">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="제일기계 로고">
+                    <span>JEIL Machine</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="about.html">회사소개</a></li>
+                    <li class="has-submenu active">
+                        <a href="products-new.html">신제품</a>
+                        <ul class="submenu">
+                            <li><a href="products-new.html#cnc">CNC 선반</a></li>
+                            <li><a href="products-new.html#machining">머시닝센터</a></li>
+                            <li><a href="products-new.html#complex">복합가공기</a></li>
+                            <li><a href="products-new.html#etc">기타 장비</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="products-used.html">중고제품</a>
+                        <ul class="submenu">
+                            <li><a href="products-used.html#cnc">CNC 선반</a></li>
+                            <li><a href="products-used.html#machining">머시닝센터</a></li>
+                            <li><a href="products-used.html#etc">기타 장비</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="inquiry.html">견적문의</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="메뉴">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 페이지 헤더 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>신제품</h1>
+            <div class="breadcrumb">
+                <a href="index.html">홈</a>
+                <span>›</span>
+                <span>신제품</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 필터 & 제품 목록 -->
+    <section class="products-list">
+        <div class="container">
+            <!-- 카테고리 필터 -->
+            <div class="product-filter">
+                <button class="filter-btn active" data-filter="all">전체</button>
+                <button class="filter-btn" data-filter="cnc">CNC 선반</button>
+                <button class="filter-btn" data-filter="machining">머시닝센터</button>
+                <button class="filter-btn" data-filter="complex">복합가공기</button>
+                <button class="filter-btn" data-filter="etc">기타 장비</button>
+            </div>
+
+            <!-- CNC 선반 -->
+            <div id="cnc" class="product-section">
+                <h2 class="product-section-title">CNC 선반</h2>
+                <div class="product-grid">
+                    <div class="product-card" data-category="cnc">
+                        <div class="product-badge new">NEW</div>
+                        <div class="product-image">
+                            <img src="images/product-cnc-1.jpg" alt="BM2035M">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">CNC 선반</span>
+                            <h3>BM2035M</h3>
+                            <p>고속 고정밀 CNC 선반</p>
+                            <ul class="product-specs">
+                                <li>최대 가공 직경: Ø350mm</li>
+                                <li>최대 가공 길이: 500mm</li>
+                                <li>주축 회전수: 4,500rpm</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-sm btn-primary">상세보기</a>
+                                <a href="inquiry.html?product=BM2035M" class="btn btn-sm">견적문의</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="cnc">
+                        <div class="product-badge new">NEW</div>
+                        <div class="product-image">
+                            <img src="images/product-cnc-2.jpg" alt="DBC130LⅡ">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">CNC 선반</span>
+                            <h3>DBC130LⅡ</h3>
+                            <p>대형 CNC 선반</p>
+                            <ul class="product-specs">
+                                <li>최대 가공 직경: Ø650mm</li>
+                                <li>최대 가공 길이: 1,500mm</li>
+                                <li>주축 회전수: 2,000rpm</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-sm btn-primary">상세보기</a>
+                                <a href="inquiry.html?product=DBC130LⅡ" class="btn btn-sm">견적문의</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="cnc">
+                        <div class="product-image">
+                            <img src="images/product-cnc-3.jpg" alt="XD42">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">CNC 선반</span>
+                            <h3>XD42</h3>
+                            <p>소형 정밀 CNC 선반</p>
+                            <ul class="product-specs">
+                                <li>최대 가공 직경: Ø200mm</li>
+                                <li>최대 가공 길이: 300mm</li>
+                                <li>주축 회전수: 6,000rpm</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-sm btn-primary">상세보기</a>
+                                <a href="inquiry.html?product=XD42" class="btn btn-sm">견적문의</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 머시닝센터 -->
+            <div id="machining" class="product-section">
+                <h2 class="product-section-title">머시닝센터</h2>
+                <div class="product-grid">
+                    <div class="product-card" data-category="machining">
+                        <div class="product-badge new">NEW</div>
+                        <div class="product-image">
+                            <img src="images/product-mc-1.jpg" alt="DNM5700">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">머시닝센터</span>
+                            <h3>DNM5700</h3>
+                            <p>수직형 머시닝센터</p>
+                            <ul class="product-specs">
+                                <li>테이블 크기: 1,100 x 570mm</li>
+                                <li>X/Y/Z 이동량: 1,020/570/510mm</li>
+                                <li>주축 회전수: 12,000rpm</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-sm btn-primary">상세보기</a>
+                                <a href="inquiry.html?product=DNM5700" class="btn btn-sm">견적문의</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="machining">
+                        <div class="product-image">
+                            <img src="images/product-mc-2.jpg" alt="SS327-5AX">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">머시닝센터</span>
+                            <h3>SS327-5AX</h3>
+                            <p>5축 머시닝센터</p>
+                            <ul class="product-specs">
+                                <li>테이블 크기: Ø320mm</li>
+                                <li>X/Y/Z 이동량: 450/350/380mm</li>
+                                <li>주축 회전수: 15,000rpm</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-sm btn-primary">상세보기</a>
+                                <a href="inquiry.html?product=SS327-5AX" class="btn btn-sm">견적문의</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 복합가공기 -->
+            <div id="complex" class="product-section">
+                <h2 class="product-section-title">복합가공기</h2>
+                <div class="product-grid">
+                    <div class="product-card" data-category="complex">
+                        <div class="product-badge hot">HOT</div>
+                        <div class="product-image">
+                            <img src="images/product-cx-1.jpg" alt="TT1800SY">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">복합가공기</span>
+                            <h3>TT1800SY</h3>
+                            <p>멀티태스킹 복합가공기</p>
+                            <ul class="product-specs">
+                                <li>터닝+밀링 동시 가공</li>
+                                <li>서브 스핀들 장착</li>
+                                <li>Y축 기능 탑재</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-sm btn-primary">상세보기</a>
+                                <a href="inquiry.html?product=TT1800SY" class="btn btn-sm">견적문의</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="complex">
+                        <div class="product-image">
+                            <img src="images/product-cx-2.jpg" alt="SR-20RIV">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">복합가공기</span>
+                            <h3>SR-20RIV</h3>
+                            <p>스위스형 자동선반</p>
+                            <ul class="product-specs">
+                                <li>최대 가공 직경: Ø20mm</li>
+                                <li>B축 회전 기능</li>
+                                <li>가이드 부시 타입</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-sm btn-primary">상세보기</a>
+                                <a href="inquiry.html?product=SR-20RIV" class="btn btn-sm">견적문의</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="complex">
+                        <div class="product-image">
+                            <img src="images/product-cx-3.jpg" alt="SV-38R">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">복합가공기</span>
+                            <h3>SV-38R</h3>
+                            <p>고성능 복합가공기</p>
+                            <ul class="product-specs">
+                                <li>최대 가공 직경: Ø38mm</li>
+                                <li>고속 라이브 툴링</li>
+                                <li>듀얼 스핀들</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-sm btn-primary">상세보기</a>
+                                <a href="inquiry.html?product=SV-38R" class="btn btn-sm">견적문의</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 기타 장비 -->
+            <div id="etc" class="product-section">
+                <h2 class="product-section-title">기타 장비</h2>
+                <div class="product-grid">
+                    <div class="product-card" data-category="etc">
+                        <div class="product-image">
+                            <img src="images/product-etc-1.jpg" alt="와이어컷방전기">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">기타 장비</span>
+                            <h3>와이어컷 방전기</h3>
+                            <p>고정밀 와이어컷 가공기</p>
+                            <ul class="product-specs">
+                                <li>최대 가공 크기: 400x300mm</li>
+                                <li>가공 정밀도: ±0.002mm</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-sm btn-primary">상세보기</a>
+                                <a href="inquiry.html" class="btn btn-sm">견적문의</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="etc">
+                        <div class="product-image">
+                            <img src="images/product-etc-2.jpg" alt="연삭기">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">기타 장비</span>
+                            <h3>CNC 연삭기</h3>
+                            <p>정밀 CNC 연삭기</p>
+                            <ul class="product-specs">
+                                <li>테이블 크기: 500x250mm</li>
+                                <li>연삭 정밀도: ±0.001mm</li>
+                            </ul>
+                            <div class="product-actions">
+                                <a href="product-detail.html" class="btn btn-sm btn-primary">상세보기</a>
+                                <a href="inquiry.html" class="btn btn-sm">견적문의</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 견적문의 CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>원하시는 장비를 찾지 못하셨나요?</h2>
+                <p>제일기계에 문의하시면 최적의 장비를 찾아드립니다</p>
+                <div class="cta-buttons">
+                    <a href="inquiry.html" class="btn btn-white">견적 문의하기</a>
+                    <a href="tel:054-972-8795" class="btn btn-outline-white">054-972-8795</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-company">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo-white.png" alt="제일기계">
+                        <span>JEIL Machine</span>
+                    </a>
+                    <p>정밀함의 시작, 제일기계<br>신뢰와 기술력으로 함께 성장합니다</p>
+                </div>
+                <div class="footer-links">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="about.html">회사소개</a></li>
+                        <li><a href="products-new.html">신제품</a></li>
+                        <li><a href="products-used.html">중고제품</a></li>
+                        <li><a href="inquiry.html">견적문의</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>연락처</h4>
+                    <ul>
+                        <li><strong>TEL</strong><span>054-972-8795</span></li>
+                        <li><strong>FAX</strong><span>054-971-5077</span></li>
+                        <li><strong>Email</strong><span>sales@jeilmachine.kr</span></li>
+                    </ul>
+                </div>
+                <div class="footer-address">
+                    <h4>오시는 길</h4>
+                    <p>경북 칠곡군 왜관읍 아곡5길 121<br>대경기계유통단지 4동1-3호 C동7-8호</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JEIL Machine. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 플로팅 버튼 -->
+    <div class="floating-buttons">
+        <a href="tel:054-972-8795" class="floating-btn phone" aria-label="전화하기">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </a>
+        <a href="https://wa.me/821051218777" class="floating-btn whatsapp" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="currentColor"/></svg>
+        </a>
+        <button class="floating-btn top" aria-label="맨 위로">
+            <svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

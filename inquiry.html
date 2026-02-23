@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>견적문의 | 제일기계</title>
+    <meta name="description" content="제일기계 견적문의 - 공작기계 견적 및 상담 신청">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="icon-phone"></i> 054-972-8795</span>
+                    <span><i class="icon-email"></i> sales@jeilmachine.kr</span>
+                </div>
+                <div class="language-selector">
+                    <a href="#" class="active">KR</a>
+                    <a href="#">EN</a>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-main">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="제일기계 로고">
+                    <span>JEIL Machine</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="about.html">회사소개</a></li>
+                    <li class="has-submenu">
+                        <a href="products-new.html">신제품</a>
+                        <ul class="submenu">
+                            <li><a href="products-new.html#cnc">CNC 선반</a></li>
+                            <li><a href="products-new.html#machining">머시닝센터</a></li>
+                            <li><a href="products-new.html#complex">복합가공기</a></li>
+                            <li><a href="products-new.html#etc">기타 장비</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="products-used.html">중고제품</a>
+                        <ul class="submenu">
+                            <li><a href="products-used.html#cnc">CNC 선반</a></li>
+                            <li><a href="products-used.html#machining">머시닝센터</a></li>
+                            <li><a href="products-used.html#etc">기타 장비</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="inquiry.html">견적문의</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="메뉴">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 페이지 헤더 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>견적문의</h1>
+            <div class="breadcrumb">
+                <a href="index.html">홈</a>
+                <span>›</span>
+                <span>견적문의</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 문의 폼 섹션 -->
+    <section class="inquiry-section">
+        <div class="container">
+            <div class="inquiry-grid">
+                <!-- 문의 폼 -->
+                <div class="inquiry-form-wrapper">
+                    <div class="form-header">
+                        <h2>견적 / 상담 신청</h2>
+                        <p>아래 양식을 작성해 주시면 빠르게 연락드리겠습니다</p>
+                    </div>
+                    <form class="inquiry-form" id="inquiryForm" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="inquiryType">문의 유형 <span class="required">*</span></label>
+                                <select id="inquiryType" name="inquiryType" required>
+                                    <option value="">선택해주세요</option>
+                                    <option value="new">신제품 견적</option>
+                                    <option value="used">중고제품 견적</option>
+                                    <option value="sell">중고장비 매입</option>
+                                    <option value="as">A/S 문의</option>
+                                    <option value="other">기타 문의</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="productCategory">장비 종류</label>
+                                <select id="productCategory" name="productCategory">
+                                    <option value="">선택해주세요</option>
+                                    <option value="cnc">CNC 선반</option>
+                                    <option value="machining">머시닝센터</option>
+                                    <option value="complex">복합가공기</option>
+                                    <option value="wirecut">와이어컷</option>
+                                    <option value="grinding">연삭기</option>
+                                    <option value="other">기타</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productName">관심 제품명 / 모델명</label>
+                            <input type="text" id="productName" name="productName" placeholder="예: BM2035M, PUMA 2000 등">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="companyName">회사명 <span class="required">*</span></label>
+                                <input type="text" id="companyName" name="companyName" required placeholder="회사명을 입력해주세요">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactName">담당자명 <span class="required">*</span></label>
+                                <input type="text" id="contactName" name="contactName" required placeholder="성함을 입력해주세요">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">연락처 <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required placeholder="010-0000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">이메일 <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="example@company.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">문의 내용 <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required placeholder="문의하실 내용을 상세히 작성해주세요.&#10;&#10;예시:&#10;- 원하시는 장비 사양&#10;- 가공 제품 종류&#10;- 예산 범위&#10;- 납기 희망일 등"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="attachment">첨부파일</label>
+                            <div class="file-upload">
+                                <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx,.jpg,.png">
+                                <label for="attachment" class="file-label">
+                                    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                                    파일 선택
+                                </label>
+                                <span class="file-name">선택된 파일 없음</span>
+                            </div>
+                            <small>PDF, DOC, JPG, PNG 파일 (최대 10MB)</small>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkmark"></span>
+                                <span>[필수] <a href="#" onclick="openPrivacyModal(); return false;">개인정보 수집 및 이용</a>에 동의합니다</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">문의 접수하기</button>
+                    </form>
+                </div>
+
+                <!-- 연락처 정보 -->
+                <div class="inquiry-sidebar">
+                    <div class="contact-card">
+                        <h3>빠른 상담 연락처</h3>
+                        <p>급한 문의는 전화 또는 WhatsApp으로 연락 주시면 더욱 빠르게 상담받으실 수 있습니다.</p>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                            </div>
+                            <div class="contact-detail">
+                                <strong>전화</strong>
+                                <a href="tel:054-972-8795">054-972-8795</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon whatsapp">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="currentColor"/></svg>
+                            </div>
+                            <div class="contact-detail">
+                                <strong>WhatsApp</strong>
+                                <a href="https://wa.me/821051218777">+82-10-5121-8777</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M22 6l-10 7L2 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                            </div>
+                            <div class="contact-detail">
+                                <strong>이메일</strong>
+                                <a href="mailto:sales@jeilmachine.kr">sales@jeilmachine.kr</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                            </div>
+                            <div class="contact-detail">
+                                <strong>영업시간</strong>
+                                <span>월~금 09:00-18:00<br>토 09:00-13:00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <h3>자주 묻는 질문</h3>
+                        <div class="faq-item">
+                            <strong>Q. 견적 회신까지 얼마나 걸리나요?</strong>
+                            <p>일반적으로 1~2 영업일 내에 회신드립니다.</p>
+                        </div>
+                        <div class="faq-item">
+                            <strong>Q. 해외 배송도 가능한가요?</strong>
+                            <p>네, 전 세계 20여 개국으로 수출하고 있습니다.</p>
+                        </div>
+                        <div class="faq-item">
+                            <strong>Q. 중고장비 매입도 하시나요?</strong>
+                            <p>네, 중고장비 매입도 진행합니다. 장비 정보를 보내주시면 감정 후 연락드립니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-company">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo-white.png" alt="제일기계">
+                        <span>JEIL Machine</span>
+                    </a>
+                    <p>정밀함의 시작, 제일기계<br>신뢰와 기술력으로 함께 성장합니다</p>
+                </div>
+                <div class="footer-links">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="about.html">회사소개</a></li>
+                        <li><a href="products-new.html">신제품</a></li>
+                        <li><a href="products-used.html">중고제품</a></li>
+                        <li><a href="inquiry.html">견적문의</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>연락처</h4>
+                    <ul>
+                        <li><strong>TEL</strong><span>054-972-8795</span></li>
+                        <li><strong>FAX</strong><span>054-971-5077</span></li>
+                        <li><strong>Email</strong><span>sales@jeilmachine.kr</span></li>
+                    </ul>
+                </div>
+                <div class="footer-address">
+                    <h4>오시는 길</h4>
+                    <p>경북 칠곡군 왜관읍 아곡5길 121<br>대경기계유통단지 4동1-3호 C동7-8호</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JEIL Machine. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 플로팅 버튼 -->
+    <div class="floating-buttons">
+        <a href="tel:054-972-8795" class="floating-btn phone" aria-label="전화하기">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </a>
+        <a href="https://wa.me/821051218777" class="floating-btn whatsapp" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="currentColor"/></svg>
+        </a>
+        <button class="floating-btn top" aria-label="맨 위로">
+            <svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 파일 업로드 이름 표시
+        document.getElementById('attachment').addEventListener('change', function() {
+            const fileName = this.files[0] ? this.files[0].name : '선택된 파일 없음';
+            document.querySelector('.file-name').textContent = fileName;
+        });
+
+        // URL 파라미터에서 제품명 가져오기
+        const urlParams = new URLSearchParams(window.location.search);
+        const product = urlParams.get('product');
+        if (product) {
+            document.getElementById('productName').value = product;
+        }
+
+        // 폼 제출 처리
+        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // 실제로는 서버로 데이터 전송
+            alert('문의가 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.');
+        });
+
+        function openPrivacyModal() {
+            alert('개인정보 수집 및 이용 동의\n\n수집항목: 회사명, 담당자명, 연락처, 이메일\n수집목적: 견적 문의 답변 및 상담\n보유기간: 상담 완료 후 1년');
+        }
+    </script>
+</body>
+</html>

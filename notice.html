@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항 | 제일기계</title>
+    <meta name="description" content="제일기계 공지사항 - 회사 소식 및 공지">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="icon-phone"></i> 054-972-8795</span>
+                    <span><i class="icon-email"></i> sales@jeilmachine.kr</span>
+                </div>
+                <div class="language-selector">
+                    <a href="#" class="active">KR</a>
+                    <a href="#">EN</a>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-main">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="제일기계 로고">
+                    <span>JEIL Machine</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="about.html">회사소개</a></li>
+                    <li class="has-submenu">
+                        <a href="products-new.html">신제품</a>
+                        <ul class="submenu">
+                            <li><a href="products-new.html#cnc">CNC 선반</a></li>
+                            <li><a href="products-new.html#machining">머시닝센터</a></li>
+                            <li><a href="products-new.html#complex">복합가공기</a></li>
+                            <li><a href="products-new.html#etc">기타 장비</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="products-used.html">중고제품</a>
+                        <ul class="submenu">
+                            <li><a href="products-used.html#cnc">CNC 선반</a></li>
+                            <li><a href="products-used.html#machining">머시닝센터</a></li>
+                            <li><a href="products-used.html#etc">기타 장비</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="inquiry.html">견적문의</a></li>
+                    <li class="active"><a href="notice.html">공지사항</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="메뉴">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 페이지 헤더 -->
+    <section class="page-header">
+        <div class="container">
+            <h1>공지사항</h1>
+            <div class="breadcrumb">
+                <a href="index.html">홈</a>
+                <span>›</span>
+                <span>공지사항</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 공지사항 목록 -->
+    <section class="notice-section">
+        <div class="container">
+            <!-- 검색 -->
+            <div class="notice-search">
+                <form class="search-form">
+                    <select name="searchType">
+                        <option value="title">제목</option>
+                        <option value="content">내용</option>
+                        <option value="all">제목+내용</option>
+                    </select>
+                    <input type="text" name="keyword" placeholder="검색어를 입력하세요">
+                    <button type="submit" class="btn btn-primary">검색</button>
+                </form>
+            </div>
+
+            <!-- 공지사항 테이블 -->
+            <div class="notice-table-wrapper">
+                <table class="notice-table">
+                    <thead>
+                        <tr>
+                            <th class="col-num">번호</th>
+                            <th class="col-title">제목</th>
+                            <th class="col-date">작성일</th>
+                            <th class="col-view">조회</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="notice-pinned">
+                            <td class="col-num"><span class="badge notice">공지</span></td>
+                            <td class="col-title">
+                                <a href="notice-detail.html">2026년 제일기계 신제품 라인업 안내</a>
+                            </td>
+                            <td class="col-date">2026.02.20</td>
+                            <td class="col-view">324</td>
+                        </tr>
+                        <tr class="notice-pinned">
+                            <td class="col-num"><span class="badge notice">공지</span></td>
+                            <td class="col-title">
+                                <a href="notice-detail.html">설 연휴 배송 및 휴무 안내</a>
+                            </td>
+                            <td class="col-date">2026.02.15</td>
+                            <td class="col-view">256</td>
+                        </tr>
+                        <tr>
+                            <td class="col-num">15</td>
+                            <td class="col-title">
+                                <a href="notice-detail.html">SIMTOS 2026 전시회 참가 안내</a>
+                                <span class="badge new">NEW</span>
+                            </td>
+                            <td class="col-date">2026.02.10</td>
+                            <td class="col-view">189</td>
+                        </tr>
+                        <tr>
+                            <td class="col-num">14</td>
+                            <td class="col-title">
+                                <a href="notice-detail.html">중고장비 특가 이벤트 진행</a>
+                                <span class="badge new">NEW</span>
+                            </td>
+                            <td class="col-date">2026.02.05</td>
+                            <td class="col-view">412</td>
+                        </tr>
+                        <tr>
+                            <td class="col-num">13</td>
+                            <td class="col-title">
+                                <a href="notice-detail.html">두산 DNM5700 신제품 입고 안내</a>
+                            </td>
+                            <td class="col-date">2026.01.28</td>
+                            <td class="col-view">298</td>
+                        </tr>
+                        <tr>
+                            <td class="col-num">12</td>
+                            <td class="col-title">
+                                <a href="notice-detail.html">2026년 신년 인사</a>
+                            </td>
+                            <td class="col-date">2026.01.02</td>
+                            <td class="col-view">187</td>
+                        </tr>
+                        <tr>
+                            <td class="col-num">11</td>
+                            <td class="col-title">
+                                <a href="notice-detail.html">연말 결산 및 송년 인사</a>
+                            </td>
+                            <td class="col-date">2025.12.27</td>
+                            <td class="col-view">156</td>
+                        </tr>
+                        <tr>
+                            <td class="col-num">10</td>
+                            <td class="col-title">
+                                <a href="notice-detail.html">TT1800SY 복합가공기 입고 안내</a>
+                            </td>
+                            <td class="col-date">2025.12.15</td>
+                            <td class="col-view">367</td>
+                        </tr>
+                        <tr>
+                            <td class="col-num">9</td>
+                            <td class="col-title">
+                                <a href="notice-detail.html">해외 수출 실적 20개국 달성</a>
+                            </td>
+                            <td class="col-date">2025.11.20</td>
+                            <td class="col-view">445</td>
+                        </tr>
+                        <tr>
+                            <td class="col-num">8</td>
+                            <td class="col-title">
+                                <a href="notice-detail.html">A/S 서비스 확대 안내</a>
+                            </td>
+                            <td class="col-date">2025.11.05</td>
+                            <td class="col-view">234</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 페이지네이션 -->
+            <div class="pagination">
+                <a href="#" class="page-link prev disabled">
+                    <svg viewBox="0 0 24 24" width="16" height="16"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                </a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link next">
+                    <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-company">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo-white.png" alt="제일기계">
+                        <span>JEIL Machine</span>
+                    </a>
+                    <p>정밀함의 시작, 제일기계<br>신뢰와 기술력으로 함께 성장합니다</p>
+                </div>
+                <div class="footer-links">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="about.html">회사소개</a></li>
+                        <li><a href="products-new.html">신제품</a></li>
+                        <li><a href="products-used.html">중고제품</a></li>
+                        <li><a href="inquiry.html">견적문의</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>연락처</h4>
+                    <ul>
+                        <li><strong>TEL</strong><span>054-972-8795</span></li>
+                        <li><strong>FAX</strong><span>054-971-5077</span></li>
+                        <li><strong>Email</strong><span>sales@jeilmachine.kr</span></li>
+                    </ul>
+                </div>
+                <div class="footer-address">
+                    <h4>오시는 길</h4>
+                    <p>경북 칠곡군 왜관읍 아곡5길 121<br>대경기계유통단지 4동1-3호 C동7-8호</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JEIL Machine. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 플로팅 버튼 -->
+    <div class="floating-buttons">
+        <a href="tel:054-972-8795" class="floating-btn phone" aria-label="전화하기">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </a>
+        <a href="https://wa.me/821051218777" class="floating-btn whatsapp" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="currentColor"/></svg>
+        </a>
+        <button class="floating-btn top" aria-label="맨 위로">
+            <svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
